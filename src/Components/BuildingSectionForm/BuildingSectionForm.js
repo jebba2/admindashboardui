@@ -90,15 +90,13 @@ export default function BuildingSectionForm({
         };
 
         const response = await axios.post(
-          "https://learningtoolsdev.gsu.edu/admindashboard/api/courses",
+          "https://learningtoolsdev.gsu.edu/admindashboard/api/courses?token=uwUdJxI/X17AOyqTDG9gY57pr7/QbGaFHGQtwsFDwEDvYgsccsVR4g==",
           data
         );
 
         console.log("API Response:", response.data);
         if (response.data === "Success") {
           openModal("Course Section created successfully");
-          c;
-
           resetBuildingSectionForm();
           resetUserForm();
           e.target.reset();

@@ -47,8 +47,7 @@ function Home() {
     setShowSubnavbar(!showSubnavbar);
   };
 
-  //if (user.d2lid) {
-  if (1 === 1) {
+  if (user.d2lid) {
     return (
       <div className="main">
         <Navbar onDashboardClick={toggleSubnavbar} />

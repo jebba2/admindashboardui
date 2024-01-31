@@ -30,7 +30,7 @@ export default function SandboxCourse({
         };
 
         const response = await axios.post(
-          "https://learningtoolsdev.gsu.edu/admindashboard/api/courses",
+          "https://learningtoolsdev.gsu.edu/admindashboard/api/courses?token=uwUdJxI/X17AOyqTDG9gY57pr7/QbGaFHGQtwsFDwEDvYgsccsVR4g==",
           data
         );
 

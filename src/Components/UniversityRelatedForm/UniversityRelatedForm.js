@@ -48,7 +48,6 @@ export default function UniversityRelatedForm({
     } else {
       try {
         const data = {
-          token: "9264211c-c9e0-46ac-82a5-44681310be84",
           courseType: "University Related",
           requestorEmail: campusEmail,
           courseName: courseName,
@@ -56,7 +55,7 @@ export default function UniversityRelatedForm({
         };
 
         const response = await axios.post(
-          "https://learningtoolsdev.gsu.edu/admindashboard/api/courses",
+          "https://learningtoolsdev.gsu.edu/admindashboard/api/courses?token=uwUdJxI/X17AOyqTDG9gY57pr7/QbGaFHGQtwsFDwEDvYgsccsVR4g==",
           data
         );
 
